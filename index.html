@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tourism Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tourism Ticket Booking</h1>
+    </header>
+
+    <main>
+      <section class="search-section">
+        <h2>Search Tickets</h2>
+        <form id="searchForm">
+          <label for="travelType">Travel Type:</label>
+          <select id="travelType" name="travelType" required>
+            <option value="">Select</option>
+            <option value="bus">Bus</option>
+            <option value="train">Train</option>
+            <option value="flight">Flight</option>
+          </select>
+
+          <label for="from">From:</label>
+          <input
+            type="text"
+            id="from"
+            name="from"
+            placeholder="Origin city"
+            required
+          />
+
+          <label for="to">To:</label>
+          <input
+            type="text"
+            id="to"
+            name="to"
+            placeholder="Destination city"
+            required
+          />
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required />
+
+          <button type="submit">Search</button>
+        </form>
+      </section>
+
+      <section class="results-section">
+        <h2>Available Tickets</h2>
+        <div id="results"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
